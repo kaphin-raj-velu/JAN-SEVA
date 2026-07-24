@@ -1,4 +1,4 @@
-<img width="455" height="129" alt="image" src="https://github.com/user-attachments/assets/c6b6518e-c624-4b8d-bcdb-c08796068996" />🚀 AI-Powered Unified Citizen Grievance Management Platform
+<🚀 AI-Powered Unified Citizen Grievance Management Platform
 
 Smart | Transparent | Accessible | AI-Driven
 
