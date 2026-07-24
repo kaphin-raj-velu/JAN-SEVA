@@ -1,0 +1,12 @@
+{
+  "name": "Janseva Portal",
+  "description": "One Nation. One Portal. Every Citizen Heard. AI-Powered National Citizen Grievance Management Platform.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
