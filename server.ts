@@ -1,14 +1,13 @@
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
+
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI, Type } from '@google/genai';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = process.cwd();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json({ limit: '15mb' }));
 
@@ -1056,9 +1055,9 @@ async function start() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
-    app.get('*all', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
-    });
+   app.get('*', (req, res) => {
+    res.sendFile(path.join(process.cwd(), 'dist', 'index.html'));
+});
   }
 
   app.listen(PORT, '0.0.0.0', () => {
